@@ -1,10 +1,5 @@
 # Docker Demo
 
-Install Docker compose
-
-```
-sudo curl -L https://github.com/docker/compose/releases/download/1.20.1/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
-```
 Install Docker
 
 ```
@@ -14,6 +9,12 @@ $ sudo apt-get update
 $ apt-cache policy docker-ce
 $ sudo apt-get install -y docker-ce
 $ sudo systemctl status docker
+```
+
+Install Docker compose
+
+```
+sudo curl -L https://github.com/docker/compose/releases/download/1.20.1/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
 ```
 
 Install Flask
