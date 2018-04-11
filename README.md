@@ -1,5 +1,10 @@
 # Docker Demo
 
+Install Docker compose
+
+```
+sudo curl -L https://github.com/docker/compose/releases/download/1.20.1/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
+```
 Install Docker
 
 ```
@@ -47,6 +52,7 @@ ENTRYPOINT ["python"]
 CMD ["app.py"]
 ```
 Write the following lines in `docker-compose.yml`
+
 ```
 web:
   build: ./web
@@ -54,4 +60,10 @@ web:
    - "5000:5000"
   volumes:
 - .:/code
+```
+
+**Note**: Make sure you are in the home directory of this repository when executing the following commands
+
+```
+$ docker-compose up
 ```
