@@ -31,7 +31,7 @@ docker-compose --version
 
 Install Flask
 ```
-$ pip install Flask
+sudo pip install Flask
 ```
 
 Write the following lines in `app.py`
